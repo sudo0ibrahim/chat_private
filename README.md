@@ -30,3 +30,7 @@ add in scripts ("scripts":{}) /scripts ("scripts":{}) أكتب في
 ```sh
 pip install requests pysocket
 ```
+run
+```sh
+./start.sh
+```
