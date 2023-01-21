@@ -5,6 +5,8 @@ Tor
 
 ## network Tor / شبكة التور
 
+![how-tor-works-1](https://user-images.githubusercontent.com/112539184/213849299-13c5dd75-f794-41b8-a27c-3d4144c47585.png)
+
 download tor project / تحميل tor project
 ```sh
 apt install tor
