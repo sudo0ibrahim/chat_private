@@ -1,0 +1,47 @@
+#!/usr/bin/python3
+
+import requests
+import json
+import os
+
+session = requests.session()
+
+print("\u001b[31;1mNote: url in url.txt and password in password.txt")
+def read_link():
+	with open("url.txt", "r") as f:
+		lines = f.readlines()
+
+		return lines[0].strip()
+url = read_link()
+
+def read_password():
+	with open("password.txt", "r") as f:
+		lines = f.readlines()
+
+		return lines[0].strip()
+password = read_password()
+
+username = input("\u001b[34;1mname:\u001b[35m ")
+
+while True:
+
+
+	message = input("\u001b[34;1mmessage:\u001b[35m ")
+
+	header = {"authorization":password}
+
+	poxy ={
+		"http":'socks5h://127.0.0.1:9050',
+  		"https":'socks5h://127.0.0.1:9050'
+	}
+	
+	x = session.post(f"http://{url}/message",json={"username":username,"message":message},headers=header,proxies=poxy)
+
+	if x.status_code == 201:
+		print("\u001b[32m[+] message")
+	elif x.status_code == 401:
+		print("\u001b[31;1mwrong password")
+		exit()
+	else:
+		print("\u001b[31;1mErorr")
+		exit()

@@ -1,0 +1,56 @@
+#!/usr/bin/python3	
+
+import json
+import requests
+import time
+import os
+
+os.system('clear')
+
+session = requests.session()
+
+list_id = []
+
+def read_link():
+	with open("url.txt", "r") as f:
+		lines = f.readlines()
+
+		return lines[0].strip()
+
+url = read_link()
+
+def read_password():
+	with open("password.txt", "r") as f:
+		lines = f.readlines()
+
+		return lines[0].strip()
+password = read_password()
+
+
+while True:
+
+	poxy ={
+		"http":'socks5h://127.0.0.1:9050',
+  		"https":'socks5h://127.0.0.1:9050'
+	}
+	
+	header = {"authorization":password}
+
+	r = session.get(f"http://{url}/message/id", headers=header, proxies=poxy)
+	jsonn = json.loads(r.text)
+				
+
+	for vale in jsonn:
+		ID = vale["id"]
+		if ID not in list_id:
+
+			j = session.get(f"http://{url}/message/{ID}", headers=header, proxies=poxy)
+			info = json.loads(j.text)
+
+			list_id.append(ID)
+
+			for chat_ in info:
+				username = chat_["username"]
+				message = chat_["message"]
+				print(f"{username}: {message}")
+
