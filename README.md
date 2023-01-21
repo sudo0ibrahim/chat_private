@@ -5,6 +5,11 @@ Tor
 
 ## network Tor / شبكة التور
 
+download tor project / تحميل tor project
+```sh
+apt install tor
+
+```
 ## install packge / تحميل الحزم
 
 ### in file kernel_chat / في ملف kernel_chat
