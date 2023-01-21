@@ -63,4 +63,4 @@ add in scripts ("scripts":{}) /scripts ("scripts":{}) أكتب في
 pip install requests, pysocket
 ```
 ### download tor / تحميل تور
-#### link [Tor](https://www.torproject.org/download/tor/) download
+#### link download [Tor](https://www.torproject.org/download/tor/) / [Tor](https://www.torproject.org/download/tor/) رابط تحميل 
