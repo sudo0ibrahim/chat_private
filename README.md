@@ -7,11 +7,8 @@ Tor
 
 ![how-tor-works-1](https://user-images.githubusercontent.com/112539184/213849299-13c5dd75-f794-41b8-a27c-3d4144c47585.png)
 
-download tor project / تحميل tor project
-```sh
-apt install tor
-
-```
+# windows / linux
+# linux
 ## install packge / تحميل الحزم
 
 ### in file kernel_chat / في ملف kernel_chat
@@ -30,9 +27,36 @@ add in scripts ("scripts":{}) /scripts ("scripts":{}) أكتب في
 ```
 ### in file link_chat  / في ملف link_chat
 ```sh
-pip install requests pysocket
+pip install requests, pysocket
 ```
-run
+### download tor / تحميل تور
+```sh
+apt install tor
+```
+
+# run
 ```sh
 ./start.sh
 ```
+## build softwor windows / بناء البرمجة في الوندورز
+
+### in file kernel_chat / في ملف kernel_chat
+```sh
+npm init -y
+npm install express morgan uuid
+npm install --save-dev nodemon
+```
+add Below is the description ("description": "",) / ("description": "",) أكتب أسفل الوصف 
+```json
+"type": "module",
+```
+add in scripts ("scripts":{}) /scripts ("scripts":{}) أكتب في 
+```json
+"dev": "nodemon index.js",
+```
+### in file link_chat  / في ملف link_chat
+```sh
+pip install requests, pysocket
+```
+### download tor / تحميل تور
+#### link [Tor](https://www.torproject.org/download/tor/) download
