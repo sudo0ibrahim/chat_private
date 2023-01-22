@@ -1,7 +1,7 @@
 # chat_private
 In this chat, the creator of the chat is the device on which the messages are kept and the chat is encrypted over a network tor 
-في هذه الدردشة ، منشئ الدردشة هو الجهاز الذي يتم الاحتفاظ بالرسائل عليه ويتم تشفير الدردشة عبر شبكة 
-Tor
+
+في هذه الدردشة ، منشئ الدردشة هو الجهاز الذي يتم الاحتفاظ بالرسائل عليه ويتم تشفير الدردشة عبر شبكة تور
 
 ## Tor network / شبكة التور
 
@@ -42,7 +42,9 @@ apt install tor
 ```sh
 ./start.sh
 ```
-## build softwor windows / بناء البرمجة في الوندورز
+# build softwor windows / بناء البرمجة في الوندورز
+
+## install packge / تحميل الحزم
 
 ### in file kernel_chat / في ملف kernel_chat
 ```sh
