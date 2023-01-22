@@ -3,6 +3,8 @@ In this chat, the creator of the chat is the device on which the messages are ke
 
 في هذه الدردشة ، منشئ الدردشة هو الجهاز الذي يتم الاحتفاظ بالرسائل عليه ويتم تشفير الدردشة عبر شبكة تور
 
+![chat](https://user-images.githubusercontent.com/112539184/213910994-9fad47d5-d17a-445c-ab6f-fca04d0bfe6c.png)
+
 ## Tor network / شبكة التور
 
 ![how-tor-works-1](https://user-images.githubusercontent.com/112539184/213849299-13c5dd75-f794-41b8-a27c-3d4144c47585.png)
